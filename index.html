@@ -1,7 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness by Juan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #28a745;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .welcome-section, .services-section, .gallery-section, .contact-section {
+            margin: 40px 0;
+        }
+        h2 {
+            color: #28a745;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+        }
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <header>
+        <h1>Fitness by Juan</h1>
+        <p>Transforma tu cuerpo, transforma tu vida</p>
+    </header>
+
+    <nav>
+        <a href="#welcome">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#gallery">Galería</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="welcome" class="welcome-section">
+            <h2>Bienvenido a Fitness by Juan</h2>
+            <p>Hola, soy Juan, un entrenador personal certificado y especialista en nutrición. Mi misión es ayudarte a alcanzar tus metas de fitness y salud mediante entrenamientos personalizados y planes de nutrición adaptados a tus necesidades.</p>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Servicios</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Entrenamiento Personalizado</h3>
+                    <p>Planes de entrenamiento adaptados a tu nivel y objetivos.</p>
+                </div>
+                <div class="service">
+                    <h3>Planes de Nutrición</h3>
+                    <p>Dietas diseñadas para optimizar tu rendimiento y bienestar.</p>
+                </div>
+                <div class="service">
+                    <h3>Consultoría Online</h3>
+                    <p>Asesoría continua a través de sesiones en línea.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200" alt="Entrenamiento 1">
+                <img src="https://via.placeholder.com/300x200" alt="Entrenamiento 2">
+                <img src="https://via.placeholder.com/300x200" alt="Entrenamiento 3">
+                <img src="https://via.placeholder.com/300x200" alt="Nutrición 1">
+                <img src="https://via.placeholder.com/300x200" alt="Nutrición 2">
+                <img src="https://via.placeholder.com/300x200" alt="Consultoría Online">
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contacto</h2>
+            <form action="#">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fitness by Juan. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
